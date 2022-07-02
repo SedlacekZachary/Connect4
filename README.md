@@ -1,4 +1,4 @@
-### Connect4
+#### Connect4
 Supervised learning neural network to play Connect 4
 
 
@@ -17,4 +17,5 @@ Although supervised learning could teach the model how to play in given situatio
 
 ## References
 KeithGalli -- Pygame implementation of Connect4 used to gather data and test model (https://github.com/KeithGalli/Connect4-Python)
+
 Daniel Svendsen -- Assisted with code writing and debugging (https://github.com/dhsvendsen)
