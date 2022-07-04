@@ -7,7 +7,11 @@ This project was done for the 2022 summer session of DIS Artificial Neural Netwo
 ## Data Collection
 Because there was no suitable database of Connect 4 games, I played a number of games using a pygame implimentation of connect 4, gathering the data for board states and feeding it to the model. Overall, the model viewed about 1000 positions over a variety of games and learned which moves were played in those positions by a real player.
 ## Outcome
-The model obtained a test accuracy of about 45%-50% and a training accuracy of about 70-80%, being fairly consitent at picking the move played in a position. When the trained model played full games against human players, it chose logical moves in the openning following principles such as center control, even when its opponent played move orders not seen in the dataset. Overall, the model succeeded at playing at a decent level when the position was normal and balanced, and given some mistakes on the human's end it could even come out on top.
+The model obtained a test accuracy of about 40%-50% and a training accuracy of about 70-80%, being fairly consitent at picking the move played in a position.
+![Model Accuracy Plot](/images/acc_plot.PNG "Model Accuracy Plot")
+When the trained model played full games against human players, it chose logical moves in the openning following principles such as center control, even when its opponent played move orders not seen in the dataset. Overall, the model succeeded at playing at a decent level when the position was normal and balanced, and given some mistakes on the human's end it could even come out on top.
+![Example input board](/images/input.PNG "Input Board")
+![Example output board](/images/heatmap.PNG "Output Heat Map")
 ## Issues & Future
 Although the model succeeded in implementing several basic strategies from the dataset, it fell short of playing to the level of a human all the time. It often failed to understand its opponent's threats or create a multi-move strategy beyond playing near the center and grouping its chips together. In a position it had not seen before, it might even miss an instant win for itself, particularly when its opponent was also about to win on the next move. In general, the model responded to agression from the opponent poorly, either being too defensive or completely ignoring the incoming danger. This is likely because this agression, while suboptimal, took the model outside of its knowledge base and could cause it to make fatal errors.
 
